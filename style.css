@@ -1,8 +1,12 @@
 body{
     background-color: hsl(30, 38%, 92%);
     font-family:'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
 }
+.image2{
+    display: none;
+}
+
 img{
     max-width: 340px;
     object-fit: cover;
@@ -43,7 +47,6 @@ article{
     background-color: white;
     border-radius: 0 0 10px 10px;
 }
-
 .prix{
 display: flex;
 justify-content: flex-start;
@@ -62,10 +65,34 @@ gap:20px;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .attribution { 
     font-size: 11px; text-align: center;
     margin-top: 30px;
  }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: hsl(228, 45%, 44%);}
+
+.submit:hover{
+    background-color:hsl(158, 45%, 17%);
+    transition: 0.4s linear 0.2s;
+    cursor: pointer;
+}
+@media screen and (min-width:1440px) {
+    .globale{
+        max-width: 1800PX;
+        flex-direction: row;
+    }
+    .image1{
+        display: none;
+    }
+    .image2{
+        display: block;
+    }
+    img{
+        max-width: 600px;
+    }
+}
